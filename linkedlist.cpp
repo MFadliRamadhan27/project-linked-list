@@ -6,4 +6,4 @@ struct Pesan {
     Pesan* next;
 };
 
-Pesan* head = NULL;
+Pesan* head = NULL
