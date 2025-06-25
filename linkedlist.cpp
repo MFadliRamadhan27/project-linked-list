@@ -53,3 +53,12 @@ void hapusSemuaPesan() {
     }
     cout << "Semua pesan telah dihapus.\n";
 }
+void hitungPesan() {
+    int jumlah = 0;
+    Pesan* temp = head;
+    while (temp != NULL) {
+        jumlah++;
+        temp = temp->next;
+    }
+    cout << "Jumlah pesan: " << jumlah << endl;
+}
