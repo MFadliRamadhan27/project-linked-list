@@ -34,4 +34,14 @@ void tampilkanPesan() {
         temp = temp->next;
     }
 }
+void hapusPesanPertama() {
+    if (head == NULL) {
+        cout << "Tidak ada pesan yang bisa dihapus.\n";
+        return;
+    }
 
+    Pesan* hapus = head;
+    head = head->next;
+    cout << "Pesan \"" << hapus->isi << "\" telah dihapus.\n";
+    delete hapus;
+}
