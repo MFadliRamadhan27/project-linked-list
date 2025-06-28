@@ -20,3 +20,17 @@ void tambahCatatan(string isi) {
     }
     cout << "Catatan ditambahkan: \"" << isi << "\"\n";
 }
+void tampilkanCatatan() {
+    if (head == NULL) {
+        cout << "Belum ada catatan.\n";
+        return;
+    }
+
+    cout << "===== Daftar Catatan Harian =====\n";
+    Catatan* temp = head;
+    int nomor = 1;
+    while (temp != NULL) {
+        cout << nomor++ << ". " << temp->isi << endl;
+        temp = temp->next;
+    }
+}
