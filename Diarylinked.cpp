@@ -53,3 +53,12 @@ void hapusSemuaCatatan() {
     }
     cout << "Semua catatan telah dihapus.\n";
 }
+void hitungCatatan() {
+    int jumlah = 0;
+    Catatan* temp = head;
+    while (temp != NULL) {
+        jumlah++;
+        temp = temp->next;
+    }
+    cout << "Jumlah catatan: " << jumlah << endl;
+}
