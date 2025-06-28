@@ -45,3 +45,11 @@ void hapusCatatanPertama() {
     cout << "Catatan \"" << hapus->isi << "\" telah dihapus.\n";
     delete hapus;
 }
+void hapusSemuaCatatan() {
+    while (head != NULL) {
+        Catatan* hapus = head;
+        head = head->next;
+        delete hapus;
+    }
+    cout << "Semua catatan telah dihapus.\n";
+}
