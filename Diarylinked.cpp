@@ -34,3 +34,14 @@ void tampilkanCatatan() {
         temp = temp->next;
     }
 }
+void hapusCatatanPertama() {
+    if (head == NULL) {
+        cout << "Tidak ada catatan yang bisa dihapus.\n";
+        return;
+    }
+
+    Catatan* hapus = head;
+    head = head->next;
+    cout << "Catatan \"" << hapus->isi << "\" telah dihapus.\n";
+    delete hapus;
+}
